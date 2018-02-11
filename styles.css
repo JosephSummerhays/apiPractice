@@ -1,0 +1,184 @@
+body {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "top top "
+  "left right"
+}
+h1 {
+  text-align:center;
+  grid-area:top
+}
+
+form .left {
+  grid-area:left;
+}
+form .right {
+  grid-area: right;
+}
+:root {
+    --back-color:#b5c1cf;
+    --tint1-color:#f7f3ea;
+    --tint2-color:#864e50;
+    --tint3-color:#011026;
+}
+/*********UNIVERSAL**********/
+a {
+  text-decoration: none;
+}
+.center {
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+}
+body {
+  background-color: var(--back-color)
+}
+/**********HEADER************/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--tint2-color);
+}
+li.active {
+  background-color: var(--tint3-color)
+}
+nav li {
+  float: left;
+  width:20%;
+}
+
+nav li a:link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a p {
+  color: var(--back-color);
+  font-size: 150%;
+}
+div.logo {
+  display:inline-flex;
+  width:50%;
+}
+div.logo img {
+  width:100%;
+  height:auto;
+}
+/**********BODY************/
+div {
+  margin:5%
+}
+
+footer {
+  background-color: var(--tint1-color);
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height:50px;
+  position: fixed;
+  bottom:0;
+}
+footer a p {
+  text: center;
+  text-align: center;
+}
+footer a:link {
+  color: var(--tint2-color);
+}
+footer a:visited {
+  color: var(--tint2-color);
+}
+footer a:hover {
+  color: var(--tint3-color);
+}
+
+div img {
+  width:100%;
+  height:auto;
+}
+section.nineGrid {
+  display: grid;
+  grid: auto auto auto / 1fr 1fr 1fr;
+  grid-gap: 15px;
+  padding: 50px;
+}
+
+/********Reviews*********/
+
+div.asideReg {
+  display: grid;
+  grid: auto / 1fr 2fr;
+}
+
+div.asideReg div {
+  margin:auto;
+}
+div.asideFlipped {
+  display: grid;
+  grid: auto / 2fr 1fr;
+}
+div.asideFlipped div {
+  margin:auto;
+}
+p.quote {
+  font-family: serif;/*TEMPORARY FONT VALUE: PLEASE CHANGE*/
+  text-align: center;
+  margin: 3.5%;
+}
+p.authorR {
+  font-family:sans-serif;/*TEMPORARY FONT VALUE: PLEASE CHANGE*/
+  text-align: right;
+  margin: 3.5%;
+  margin-right: 10%;
+}
+p.authorL {
+  font-family:sans-serif;/*TEMPORARY FONT VALUE: PLEASE CHANGE*/
+  text-align: left;
+  margin: 3.5%;
+  margin-left: 10%;
+}
+
+/********About********/
+aside {
+  background-color: var(--tint1-color);
+  flex: 1;
+  margin-top:3%;
+  margin-right: 5%;
+  margin-left:0%;
+  float:left;
+  width:50%;
+}
+p.fullPara {
+  text-indent: 50px;
+  font-size: 20px;
+  line-height: 200%;
+}
+.twoxFour {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+/*********HOME**********/
+
+.bgimg {
+    background-image: url('./images/Zoe 5.JPG');
+    background-repeat:no-repeat;
+    background-size:100%;
+    height:1250px;
+    margin-left:30%;
+    margin-right:30%;
+}
+/**********CONTACT********/
+form {
+  margin-left:30%;
+  margin-right:auto;
+}
+input {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
