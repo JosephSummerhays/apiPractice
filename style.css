@@ -1,0 +1,72 @@
+:root {
+  --backColor:#bcb0c1;
+  --tint1:#16425b;
+  --tint2:#8fcfd6;
+  --tint3:#040730;
+
+  --titleFont: 'Comfortaa', cursive;
+  --paraFont:Arial;
+
+  --navBarHeight:50px;
+}
+body {
+  background-color: var(--backColor);
+  display:grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas:
+    "navBar content"
+    "footer footer";
+}
+#navBar {
+  background-color: var(--tint1);
+  grid-area: navBar;
+  padding-left: 0;
+  /*display: inline-grid;*/
+  /*width:100%;
+  /*height: var(--navBarHeight);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+}
+  #navBar li {
+    /*width:100%;
+    height:100%;*/
+  }
+  #navBar li:hover {
+    background-color: var(--tint2);
+  }
+  #navBar li {
+    list-style: none;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+    width:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*line-height: var(--navBarHeight);
+    padding-left: 40%;*/
+    /*position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+  }
+
+h1 {
+  text-align: center;
+  padding:50px;
+  padding-top: 15px;
+  margin-top: 0px;
+  font-size: 100px
+}
+
+.footer {
+    grid-area: footer;
+    height: 70px;
+
+    padding-left: 45%;
+    padding-right: 45%;
+    background-color: var(--tint2)
+  }
+  .footer a {
+    text-align: center;
+  }
